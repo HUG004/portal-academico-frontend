@@ -31,7 +31,7 @@ export default function App() {
       <AuthProvider>
         <AdminAuthProvider>
           <Routes>
-
+            <Route path="/" element={<Navigate to="/login" replace />} />
             {/* LOGIN DE ESTUDIANTES */}
             <Route
               path="/login"
