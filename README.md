@@ -1,4 +1,6 @@
 # Portal Académico SII — Frontend
+- Rivera Morales Hugo Baruch
+- Silva Mendez Abraham
 
 Aplicación web desarrollada con **React y Vite** para la consulta y administración de información académica del Tecnológico Nacional de México, campus Celaya.
 
@@ -447,5 +449,3 @@ Este trabajo permitió aplicar conceptos de desarrollo web moderno, comunicació
 **Proyecto académico — Tópicos Avanzados de Desarrollo Web**
 
 Tecnológico Nacional de México — Instituto Tecnológico de Celaya.
-Rivera Morales Hugo Baruch
-Silva Mendez Abraham
