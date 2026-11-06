@@ -1,0 +1,282 @@
+
+.horarios-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.horarios-encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.horarios-etiqueta {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #123D2A;
+}
+
+.horarios-encabezado h1 {
+  color: #123D2A;
+  font-size: 29px;
+  margin: 8px 0;
+}
+
+.horarios-encabezado p {
+  color: #64748b;
+  margin: 0;
+}
+
+.horarios-actualizar,
+.horarios-estado button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background: #ffffff;
+  color: #123D2A;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.horarios-actualizar:hover,
+.horarios-estado button:hover {
+  background: #E8F3EC;
+}
+
+.horarios-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.horarios-indicador,
+.horarios-panel,
+.horarios-detalle {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.horarios-indicador {
+  padding: 22px;
+}
+
+.horarios-icono {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  margin-bottom: 15px;
+  background: #E8F3EC;
+  color: #123D2A;
+}
+
+.horarios-indicador > span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.horarios-indicador strong {
+  color: #123D2A;
+  font-size: 27px;
+}
+
+.horarios-panel {
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.horarios-panel-header {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.horarios-panel-header h2,
+.horarios-detalle h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: #123D2A;
+}
+
+.horarios-panel-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.horarios-panel-header select {
+  min-width: 210px;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  color: #334155;
+  background: white;
+}
+
+.horarios-calendario-scroll {
+  overflow-x: auto;
+}
+
+.horarios-calendario {
+  min-width: 1000px;
+}
+
+.horarios-celda-encabezado {
+  background: #F5F8F5;
+  color: #123D2A;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+}
+
+.horarios-calendario {
+  display: grid;
+  grid-template-columns: 85px repeat(6, minmax(150px, 1fr));
+}
+
+.horarios-fila {
+  display: contents;
+}
+
+.horarios-hora {
+  padding: 18px 8px;
+  background: #f8fafc;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.horarios-celda {
+  padding: 5px;
+  border-top: 1px solid #e2e8f0;
+  border-left: 1px solid #f1f5f9;
+  min-height: 95px;
+}
+
+.horarios-clase {
+  background: #E8F3EC;
+  border-left: 4px solid #123D2A;
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.horarios-clase strong {
+  color: #123D2A;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.horarios-clase span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #475569;
+  font-size: 10px;
+}
+
+.horarios-detalle {
+  padding: 22px;
+}
+
+.horarios-detalle h2 {
+  margin-bottom: 20px;
+}
+
+.horarios-tabla-scroll {
+  overflow-x: auto;
+}
+
+.horarios-tabla {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+.horarios-tabla th {
+  text-align: left;
+  background: #F5F8F5;
+  padding: 14px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.horarios-tabla td {
+  padding: 15px 14px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 13px;
+  color: #334155;
+}
+
+.horarios-tabla td strong {
+  display: block;
+  color: #123D2A;
+}
+
+.horarios-tabla td small {
+  display: block;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+.horarios-vacio {
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.horarios-estado {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.horarios-estado p {
+  color: #64748b;
+}
+
+@media (max-width: 850px) {
+  .horarios-resumen {
+    grid-template-columns: 1fr;
+  }
+
+  .horarios-encabezado,
+  .horarios-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .horarios-encabezado h1 {
+    font-size: 24px;
+  }
+}

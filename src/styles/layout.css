@@ -1,0 +1,145 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f6fb;
+}
+
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  background: #142a46;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 16px;
+  min-height: 100vh;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 10px 30px;
+}
+
+.sidebar-logo svg {
+  color: #93c5fd;
+  flex-shrink: 0;
+}
+
+.sidebar-logo strong {
+  display: block;
+  font-size: 15px;
+}
+
+.sidebar-logo span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.sidebar-etiqueta {
+  padding: 14px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #94a3b8;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-enlace {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 14px;
+  border-radius: 9px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.sidebar-enlace:hover {
+  background: #243d5c;
+  color: white;
+}
+
+.sidebar-enlace.activo {
+  background: #29486b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-salir {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 9px;
+  color: #fca5a5;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+}
+
+.sidebar-salir:hover {
+  background: #3d3040;
+}
+
+.contenido-principal {
+  flex: 1;
+  min-width: 0;
+  padding: 35px;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    padding-bottom: 10px;
+  }
+
+  .sidebar-etiqueta {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 8px 0;
+  }
+
+  .sidebar-enlace {
+    white-space: nowrap;
+  }
+
+  .sidebar-salir {
+    margin-top: 8px;
+  }
+
+  .contenido-principal {
+    padding: 20px 15px;
+  }
+}
+.sidebar-logo-img {
+  width: 46px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}

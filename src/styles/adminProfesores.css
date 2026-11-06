@@ -1,0 +1,332 @@
+
+.admin-profesores-page {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.admin-profesores-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.admin-profesores-header h1 {
+  color: #123D2A;
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.admin-profesores-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.admin-profesores-crear {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 17px;
+  background: #123D2A;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-profesores-crear:hover {
+  background: #0B2B1C;
+}
+
+.admin-profesores-panel {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.admin-profesores-barra {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 22px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-profesores-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+  padding: 0 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  color: #64748b;
+}
+
+.admin-profesores-busqueda input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  background: transparent;
+}
+
+.admin-profesores-refrescar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: white;
+  color: #123D2A;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.admin-profesores-tabla-scroll {
+  overflow-x: auto;
+}
+
+.admin-profesores-tabla {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.admin-profesores-tabla th {
+  padding: 16px;
+  text-align: left;
+  background: #F5F8F5;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.admin-profesores-tabla td {
+  padding: 16px;
+  border-top: 1px solid #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+}
+
+.admin-profesores-tabla td strong,
+.admin-profesores-tabla td small {
+  display: block;
+}
+
+.admin-profesores-tabla td strong {
+  color: #123D2A;
+  margin-bottom: 5px;
+}
+
+.admin-profesores-tabla td small {
+  color: #94a3b8;
+}
+
+.admin-profesores-contador {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #E8F3EC;
+  color: #123D2A;
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+
+.admin-profesores-acciones {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-profesores-acciones button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  cursor: pointer;
+}
+
+.admin-profesores-acciones .editar {
+  color: #123D2A;
+}
+
+.admin-profesores-acciones .eliminar {
+  color: #dc2626;
+}
+
+.admin-profesores-acciones button:hover {
+  background: #f1f5f9;
+}
+
+.admin-profesores-footer {
+  padding: 17px 22px;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.admin-profesores-estado {
+  padding: 50px;
+  text-align: center;
+  color: #64748b;
+}
+
+.admin-profesores-estado svg {
+  margin: 0 auto;
+}
+
+.admin-profesores-exito {
+  padding: 14px 17px;
+  margin-bottom: 20px;
+  background: #E8F3EC;
+  border: 1px solid #B9D6C2;
+  color: #123D2A;
+  border-radius: 9px;
+}
+
+.admin-profesores-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px;
+  margin-bottom: 18px;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.admin-profesores-modal-fondo {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.65);
+}
+
+.admin-profesores-modal {
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.admin-profesores-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.admin-profesores-modal-header h2 {
+  margin: 0 0 7px;
+  color: #123D2A;
+  font-size: 21px;
+}
+
+.admin-profesores-modal-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.admin-profesores-modal-header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #f1f5f9;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-profesores-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-profesores-modal form label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.admin-profesores-modal form > input {
+  padding: 12px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.admin-profesores-modal form > input:focus {
+  border-color: #123D2A;
+}
+
+.admin-profesores-modal-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.admin-profesores-modal-acciones button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 17px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-profesores-modal-acciones .cancelar {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+}
+
+.admin-profesores-modal-acciones .guardar {
+  background: #123D2A;
+  color: white;
+  border: none;
+}
+
+.admin-profesores-modal-acciones button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .admin-profesores-header,
+  .admin-profesores-barra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-profesores-busqueda {
+    max-width: none;
+  }
+
+  .admin-profesores-modal {
+    padding: 22px;
+  }
+}

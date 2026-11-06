@@ -1,0 +1,410 @@
+
+/* ============================================
+   BOTÓN GESTIONAR EN TABLA DE PROFESORES
+============================================ */
+
+.admin-profesores-acciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.admin-profesores-acciones .gestionar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: auto;
+  height: 35px;
+  padding: 0 12px;
+  background: #e8f3ec;
+  border: 1px solid #c8ddcf;
+  border-radius: 8px;
+  color: #123d2a;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-profesores-acciones .gestionar:hover {
+  background: #d5e9dc;
+}
+
+/* ============================================
+   VENTANA DE GESTIÓN
+============================================ */
+
+.admin-gestion-fondo {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.68);
+}
+
+.admin-gestion-modal {
+  width: 100%;
+  max-width: 850px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.18);
+}
+
+.admin-gestion-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 26px 30px;
+  background: #123d2a;
+  color: white;
+}
+
+.admin-gestion-header span {
+  display: block;
+  margin-bottom: 9px;
+  color: #bbd7c4;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.admin-gestion-header h2 {
+  margin: 0 0 7px;
+  color: white;
+  font-size: 23px;
+}
+
+.admin-gestion-header p {
+  margin: 0;
+  color: #d6e6db;
+  font-size: 13px;
+}
+
+.admin-gestion-cerrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-gestion-cerrar:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================
+   PESTAÑAS
+============================================ */
+
+.admin-gestion-pestanas {
+  display: flex;
+  gap: 8px;
+  padding: 14px 30px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-gestion-pestanas button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 17px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-gestion-pestanas button.activa {
+  color: #123d2a;
+  border-bottom-color: #123d2a;
+}
+
+.admin-gestion-pestanas button:hover {
+  color: #123d2a;
+}
+
+/* ============================================
+   CONTENIDO
+============================================ */
+
+.admin-gestion-contenido {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 25px 30px 30px;
+}
+
+.admin-gestion-contenido h3 {
+  margin: 0 0 18px;
+  color: #123d2a;
+  font-size: 17px;
+}
+
+.admin-gestion-formulario {
+  margin-bottom: 30px;
+  padding: 22px;
+  background: #f8faf9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.admin-gestion-campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-gestion-campos > div {
+  min-width: 0;
+}
+
+.admin-gestion-campos label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-gestion-campos input,
+.admin-gestion-campos select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  color: #334155;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.admin-gestion-campos input:focus,
+.admin-gestion-campos select:focus {
+  border-color: #123d2a;
+  box-shadow: 0 0 0 3px rgba(18, 61, 42, 0.1);
+}
+
+.admin-gestion-form-acciones {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.admin-gestion-form-acciones button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-gestion-form-acciones .primario {
+  background: #123d2a;
+  color: white;
+  border: 1px solid #123d2a;
+}
+
+.admin-gestion-form-acciones .primario:hover {
+  background: #0b2b1c;
+}
+
+.admin-gestion-form-acciones .secundario {
+  background: white;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.admin-gestion-form-acciones button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   LISTA DE MATERIAS Y HORARIOS
+============================================ */
+
+.admin-gestion-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-gestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px 19px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.admin-gestion-item:hover {
+  border-color: #c5d8cb;
+}
+
+.admin-gestion-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.admin-gestion-item-info strong {
+  color: #123d2a;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.admin-gestion-item-info small {
+  color: #64748b;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.admin-gestion-item-acciones {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.admin-gestion-item-acciones button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-gestion-item-acciones .editar {
+  color: #123d2a;
+}
+
+.admin-gestion-item-acciones .eliminar {
+  color: #dc2626;
+}
+
+.admin-gestion-item-acciones button:hover {
+  background: #f1f5f9;
+}
+
+.admin-gestion-item-acciones button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-gestion-vacio {
+  padding: 25px;
+  background: #f8faf9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 700px) {
+  .admin-gestion-fondo {
+    padding: 10px;
+  }
+
+  .admin-gestion-modal {
+    max-height: 95vh;
+  }
+
+  .admin-gestion-header {
+    padding: 20px;
+  }
+
+  .admin-gestion-header h2 {
+    font-size: 19px;
+  }
+
+  .admin-gestion-pestanas {
+    padding: 10px 15px 0;
+  }
+
+  .admin-gestion-pestanas button {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .admin-gestion-contenido {
+    padding: 20px 15px;
+  }
+
+  .admin-gestion-formulario {
+    padding: 15px;
+  }
+
+  .admin-gestion-campos {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .admin-gestion-item {
+    align-items: flex-start;
+  }
+}
+
+/* Selector de horarios */
+
+.admin-gestion-campos select {
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-color: #ffffff;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23123D2A' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+.admin-gestion-campos select:hover {
+  border-color: #123d2a;
+}
+
+.admin-gestion-campos select:focus {
+  border-color: #123d2a;
+  box-shadow: 0 0 0 3px rgba(18, 61, 42, 0.12);
+}

@@ -1,0 +1,155 @@
+:root {
+  --verde-oscuro: #123d2a;
+  --verde-principal: #1b5e3a;
+  --verde-acento: #2e7d50;
+  --verde-hover: #164c30;
+  --verde-claro: #e8f3ec;
+  --verde-borde: #c8dfcf;
+
+  --fondo-app: #f5f8f5;
+  --texto-principal: #183c2b;
+  --texto-secundario: #64748b;
+}
+
+/* ===== ESTRUCTURA GENERAL ===== */
+
+.app-layout {
+  background: var(--fondo-app);
+}
+
+.sidebar {
+  background: var(--verde-oscuro);
+}
+
+.sidebar-logo svg {
+  color: #ffffff;
+}
+
+.sidebar-enlace:hover {
+  background: #24583d;
+}
+
+.sidebar-enlace.activo {
+  background: var(--verde-principal);
+  color: #ffffff;
+}
+
+/* ===== DASHBOARD ===== */
+
+.dashboard-etiqueta,
+.progreso-texto strong {
+  color: var(--verde-acento);
+}
+
+.dashboard-encabezado h1,
+.perfil-datos h2,
+.estadistica-card strong,
+.detalle-card h3,
+.detalle-fila strong {
+  color: var(--texto-principal);
+}
+
+.perfil-foto {
+  background: var(--verde-claro);
+  color: var(--verde-principal);
+}
+
+.estadistica-icono.azul,
+.estadistica-icono.verde,
+.estadistica-icono.morado,
+.estadistica-icono.naranja {
+  background: var(--verde-claro);
+  color: var(--verde-principal);
+}
+
+.progreso-barra > div {
+  background: var(--verde-acento);
+}
+
+/* ===== CALIFICACIONES ===== */
+
+.calificaciones-etiqueta {
+  color: var(--verde-acento);
+}
+
+.calificaciones-encabezado h1,
+.calificaciones-indicador strong,
+.materia-nombre {
+  color: var(--texto-principal);
+}
+
+.indicador-azul,
+.indicador-verde,
+.indicador-morado {
+  background: var(--verde-claro);
+  color: var(--verde-principal);
+}
+
+.calificaciones-actualizar:hover,
+.calificaciones-estado button:hover {
+  background: var(--verde-claro);
+}
+
+.calificaciones-buscador:focus-within,
+.calificaciones-filtros select:focus {
+  border-color: var(--verde-acento);
+  outline-color: var(--verde-acento);
+}
+
+/* ===== LOGIN ===== */
+
+.login-page {
+  background: linear-gradient(
+    135deg,
+    #0b2b1c,
+    #1b5e3a
+  );
+}
+
+.login-icono {
+  background: var(--verde-claro);
+  color: var(--verde-principal);
+}
+
+.login-card h1 {
+  color: var(--texto-principal);
+}
+
+.login-card input:focus {
+  border-color: var(--verde-acento);
+  box-shadow: 0 0 0 3px var(--verde-claro);
+}
+
+.login-card button {
+  background: var(--verde-principal);
+}
+
+.login-card button:hover {
+  background: var(--verde-hover);
+}
+
+/* ===== BOTONES Y ESTADOS ===== */
+
+.dashboard-estado button {
+  background: var(--verde-principal);
+}
+
+.dashboard-estado button:hover {
+  background: var(--verde-hover);
+}
+
+.spinner {
+  border-color: var(--verde-claro);
+  border-top-color: var(--verde-acento);
+}
+.login-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.login-logo img {
+  width: 85px;
+  height: 100px;
+  object-fit: contain;
+}
